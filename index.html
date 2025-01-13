@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a7e5bbfa7.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "NXu96JBx0Ud_x7fYO",
+        });
+    })();
+    </script>
+    <title>Roberto's Portfolio</title>
+</head>
+<body>
+
+    <div class="success">
+        <i class="fa-regular fa-circle-check success-icon"></i>
+        <div class="success-text">
+            <span class="success-text-title">Message Sent!</span>
+            <p class="success-text-para">Your message has been received. I'll get back to you soon!</p>
+        </div>
+    </div>
+
+    <nav class="original-navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Roberto Vega</span>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">
+                    <button class="nav-link-button">
+                        Contact
+                    </button>
+                </a>
+            </div>
+            <button class="nav-menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-wrapper">
+        <nav class="menu">
+            <button class="menu-close" onclick="closeMenu()">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="menu-links">
+                <a href="#home" class="menu-link">Home</a>
+                <a href="#about" class="menu-link">About Me</a>
+                <a href="#projects" class="menu-link">Projects</a>
+                <a href="#contact" class="menu-link">
+                    <button class="menu-link-button">Contact</button>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <header id="home">
+        <svg
+        id="visual"
+        viewBox="0 0 1200 1300"
+        width="880"
+        height="1200"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        class="blob blob-header"
+      >
+        <g transform="translate(927.4519875387796 -111.9512848530959)">
+          <path
+            d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+            fill="#000000"
+          ></path>
+        </g>
+      </svg>
+        <div class="container">
+            <div class="row header-row">
+                <span class="header-span">Hey, I'm</span>
+                <h1 class="header-title">Roberto Vega</h1>
+                <h2 class="header-subtitle">Freelance Frontend Developer</h2>
+                <span class="header-about">Find out more <a href="#about" class="bold">about me.</a></span>
+                <div class="header-links">
+                    <a href="https://www.linkedin.com/in/roberto-vega-593a71227/" class="header-link" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/robertoV00" class="header-link" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/roberto-vega-593a71227/" class="header-link" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+                <a href="#about" class="header-scroll">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container about-container">
+                <div class="row about-row">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3 class="about-title">ABOUT ME</h3>
+                            <h4 class="about-text-subtitle">Roberto Vega</h4>
+                            <p class="about-text-para">I'm a <span class="bold">freelance developer</span> with a Bachelor's Degree in Computer Science developing <span class="bold">high quality real world</span> web applications and solving difficult fontend problems with the use of HMTL, CSS, JavaScript and React.</p>
+                        </div>
+                        <div class="about-skills">
+                            <h3 class="about-title">My Skills</h3>
+                            <div class="about-skill-wrapper">
+                                <figure class="about-skill">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="about-skill-img">
+                                    <span class="about-skill-name">HTML</span>
+                                </figure>
+                                <figure class="about-skill">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="" class="about-skill-img">
+                                    <span class="about-skill-name">CSS</span>
+                                </figure>
+                                <figure class="about-skill">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" class="about-skill-img">
+                                    <span class="about-skill-name">JavaScript</span>
+                                </figure>
+                                <figure class="about-skill">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="" class="about-skill-img">
+                                    <span class="about-skill-name">React</span>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="about-img-wrapper">
+                        <img class="about-img" src="assets/about-image.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <svg
+        id="visual-project"
+        viewBox="0 0 1200 1300"
+        width="880"
+        height="1200"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        class="blob blob-projects"
+      >
+        <g transform="translate(927.4519875387796 -111.9512848530959)">
+          <path
+            d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+            fill="#000000"
+          ></path>
+        </g>
+            </svg>
+            <svg
+            id="visual-project-2"
+            viewBox="0 0 1200 1300"
+            width="880"
+            height="1200"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            class="blob blob-projects2"
+            >
+            <g transform="translate(927.4519875387796 -111.9512848530959)">
+                <path
+                d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+                fill="#000000"
+                ></path>
+            </g>
+            </svg>
+            <div class="container projects-container">
+                <div class="row projects-row">
+                    <h2 class="projects-title">Projects</h2>
+                    <div class="project">
+                        <figure class="project-img-wrapper">
+                            <img class="project-img" src="assets/project-image.png" alt="">
+                            <div class="project-img-links">
+                                <a class="project-img-link" href="website.com">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a class="project-img-link" href="githubsourcecode.com">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        <div class="project-description">
+                            <h3 class="project-title">
+                                React Project
+                            </h3>
+                            <div class="project-skills">
+                                <div class="project-skill">HTML</div>
+                                <div class="project-skill">CSS</div>
+                                <div class="project-skill">JavaScript</div>
+                                <div class="project-skill">React</div>
+                            </div>
+                            <p class="project-para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero veritatis exercitationem quo voluptates iste quisquam illum impedit voluptatum, nihil cumque!
+                            </p>
+                            <div class="project-links">
+                                <a href="" class="project-link">
+                                    <span class="live-link">Live Link</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project-link">
+                                    <span class="live-link">Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <figure class="project-img-wrapper">
+                            <img class="project-img" src="assets/project-image.png" alt="">
+                            <div class="project-img-links">
+                                <a class="project-img-link" href="website.com">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a class="project-img-link" href="githubsourcecode.com">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        <div class="project-description">
+                            <h3 class="project-title">
+                                React Project
+                            </h3>
+                            <div class="project-skills">
+                                <div class="project-skill">HTML</div>
+                                <div class="project-skill">CSS</div>
+                                <div class="project-skill">JavaScript</div>
+                                <div class="project-skill">React</div>
+                            </div>
+                            <p class="project-para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero veritatis exercitationem quo voluptates iste quisquam illum impedit voluptatum, nihil cumque!
+                            </p>
+                            <div class="project-links">
+                                <a href="" class="project-link">
+                                    <span class="live-link">Live Link</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project-link">
+                                    <span class="live-link">Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <figure class="project-img-wrapper">
+                            <img class="project-img" src="assets/project-image.png" alt="">
+                            <div class="project-img-links">
+                                <a class="project-img-link" href="website.com">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a class="project-img-link" href="githubsourcecode.com">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        <div class="project-description">
+                            <h3 class="project-title">
+                                React Project
+                            </h3>
+                            <div class="project-skills">
+                                <div class="project-skill">HTML</div>
+                                <div class="project-skill">CSS</div>
+                                <div class="project-skill">JavaScript</div>
+                                <div class="project-skill">React</div>
+                            </div>
+                            <p class="project-para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero veritatis exercitationem quo voluptates iste quisquam illum impedit voluptatum, nihil cumque!
+                            </p>
+                            <div class="project-links">
+                                <a href="" class="project-link">
+                                    <span class="live-link">Live Link</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project-link">
+                                    <span class="live-link">Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <figure class="project-img-wrapper">
+                            <img class="project-img" src="assets/project-image.png" alt="">
+                            <div class="project-img-links">
+                                <a class="project-img-link" href="website.com">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a class="project-img-link" href="githubsourcecode.com">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </figure>
+                        <div class="project-description">
+                            <h3 class="project-title">
+                                React Project
+                            </h3>
+                            <div class="project-skills">
+                                <div class="project-skill">HTML</div>
+                                <div class="project-skill">CSS</div>
+                                <div class="project-skill">JavaScript</div>
+                                <div class="project-skill">React</div>
+                            </div>
+                            <p class="project-para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero veritatis exercitationem quo voluptates iste quisquam illum impedit voluptatum, nihil cumque!
+                            </p>
+                            <div class="project-links">
+                                <a href="" class="project-link">
+                                    <span class="live-link">Live Link</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <a href="" class="project-link">
+                                    <span class="live-link">Code</span>
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container contact-container">
+                <div class="row contact-row">
+                    <div class="contact-description">
+                        <h2 class="contact-title">Contact</h2>
+                        <h3 class="contact-subtitle">Ready to build something great?</h3>
+                        <p class="contact-para">
+                            If you have any opportunities, ideas or questions you want to throw my way, don't hesitate to message me!
+                        </p>
+                        <a href="mailto:robvega945@gmail.com" class="contact-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="email">robvega945@gmail.com</span>
+                        </a>
+                    </div>
+                    <form class="contact-form" onsubmit="sendEmail()">
+                        <div class="form-item">
+                            <label for="" class="form-item-label">Name</label>
+                            <input name="name" required type="text" class="form-item-input">
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="form-item-label">Email</label>
+                            <input name="email" required type="email" class="form-item-input">
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="form-item-label">Message</label>
+                            <textarea name="message" required type="email" class="form-item-textarea"></textarea>
+                        </div>
+                        <button class="contact-form-submit">Send
+                            <div class="contact-form-loading hidden">
+                                <i class="fa-solid fa-spinner contact-form-loading-icon"></i>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row footer-row">
+            <span class="footer-copyright">
+                Copyright © 2023. All right reserved
+            </span>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/roberto-vega-593a71227/" class="footer-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/robertoV00" class="footer-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/roberto-vega-593a71227/" class="footer-link">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
